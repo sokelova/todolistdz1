@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+}
+.divname{
+    margin-left: 5px;
+    color: violet;
+    font-weight: bold;
+}
+.divmes{
+    margin-left: 5px;
+    color: white;
+}
+.divtime{
+    text-align: right;
+    color: darkgrey;
+}
+.ava {
+    width: 60px;
+    bottom: 0px;
+    align-self: flex-end;
+    z-index: 10;
+}
+.avaStyle {
+    width: 50px;
+    height: 50px;
+}
+.message {
+    background-color: darkslategray;
+    margin: 5px;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    position: relative;
+    line-height: 1.5em;
+}
+.message:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    left: -7px;
+    width: 20px;
+    background-color: darkslategray;
+    border-bottom-right-radius: 16px 14px;
+}
+.message:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    left: -26px;
+    width: 26px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+}
