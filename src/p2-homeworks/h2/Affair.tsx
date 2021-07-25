@@ -9,18 +9,20 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const{deleteAffairCallback, affair}=props
+    const {deleteAffairCallback, affair} = props
+    const {priority} = props.affair
+
 
     const deleteCallback = () => {deleteAffairCallback(affair._id)}
 
     let className;
-    if (affair.priority === "high") {
+    if (priority === "high") {
         className = styl.span_name_high;
     }
-    if (affair.priority === "low") {
+    if (priority === "low") {
         className = styl.span_name_low;
     }
-    if (affair.priority === "middle") {
+    if (priority === "middle") {
         className = styl.span_name_middle;
     }
 

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: any // need to fix any
-    setNameCallback: any // need to fix any
+    setNameCallback: (name: ChangeEvent<HTMLInputElement>) => void
     addUser: any // need to fix any
     error: any // need to fix any
     totalUsers: any // need to fix any
