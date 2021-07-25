@@ -1,7 +1,24 @@
 .someClass {
 
 }
+.span_name_low{
+    color:green;
+    font-size: 20px;
+}
+.span_name_middle{
+    color:blue;
+    font-size: 20px;
+}
+
+.span_name_high{
+    color:red;
+    font-size: 20px;
+}
 .container{
     display: inline-block;
     margin-right: 10px;
+}
+.name{
+    color: darkslategray;
+    font-size: 20px;
 }
